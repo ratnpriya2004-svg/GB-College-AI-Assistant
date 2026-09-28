@@ -1,0 +1,136 @@
+{
+    "college": {
+        "name": "G.B. College, Naugachia",
+        "fullName": "Gajadhar Bhagat College, Naugachia",
+        "location": "Naugachia, Bhagalpur, Bihar - 853204",
+        "university": "T.M. Bhagalpur University, Bhagalpur",
+        "type": "Constituent College"
+    },
+
+    "about": {
+        "description": "G.B. College, Naugachia is an institution committed to academic excellence, research and student development. The college provides education across Science, Arts and Vocational disciplines.",
+        
+        "history": "The college was established in 1958 and is associated with the name Gajadhar Bhagat, whose land donation contributed to the establishment of the institution. The college is situated in Naugachia, between the Ganges and Koshi river region."
+    },
+
+    "vision": "G.B. College aims to be a premier educational institution that not only imparts academic knowledge but also prepares students for success in every aspect of life. The college focuses on intellectual ability, leadership qualities, ethical values and social responsibility.",
+
+    "mission": "The mission of G.B. College is to provide inclusive, quality and value-based education to students from diverse backgrounds. The institution promotes innovation, research, discipline and skill development to empower students for higher education, employment and entrepreneurship.",
+
+    "values": [
+        "Integrity",
+        "Discipline",
+        "Inclusiveness",
+        "Social Responsibility",
+        "Academic Excellence",
+        "Respect for Diversity",
+        "Community Service"
+    ],
+
+    "courses": {
+        "science": [
+            "B.Sc. Botany",
+            "B.Sc. Chemistry",
+            "B.Sc. Mathematics",
+            "B.Sc. Physics",
+            "B.Sc. Zoology"
+        ],
+
+        "arts": [
+            "B.A. Economics",
+            "B.A. Political Science",
+            "B.A. English",
+            "B.A. Hindi",
+            "B.A. History",
+            "B.A. Philosophy",
+            "B.A. Urdu"
+        ],
+
+        "vocational": [
+            "Bachelor of Computer Applications (BCA)",
+            "Industrial Fish & Fishery (IFF)"
+        ]
+    },
+
+    "departments": {
+        "science": [
+            "Botany",
+            "Chemistry",
+            "Mathematics",
+            "Physics",
+            "Zoology"
+        ],
+
+        "arts": [
+            "Economics",
+            "Political Science",
+            "English",
+            "Hindi",
+            "History",
+            "Philosophy",
+            "Urdu"
+        ],
+
+        "vocational": [
+            "BCA",
+            "Industrial Fish & Fishery"
+        ]
+    },
+
+    "library": {
+        "description": "The G.B. College library is designed to support academic learning, research and personal development.",
+        
+        "resources": [
+            "Textbooks",
+            "Reference Books",
+            "National and International Journals",
+            "Magazines",
+            "Newspapers",
+            "E-books",
+            "E-resources",
+            "Academic Databases"
+        ],
+
+        "facilities": [
+            "Reading Halls",
+            "Computer Systems",
+            "Internet Access",
+            "Digital Library Facilities",
+            "Online Journals",
+            "Research Publications"
+        ]
+    },
+
+    "achievements": [
+        "NAAC Accreditation with B Grade in January 2015",
+        "Participation of NCC cadets in Republic Day parades in New Delhi",
+        "Organization of UGC sponsored national seminars",
+        "Organization of academic and international seminars",
+        "Inter-college participation in sports including Kabaddi, Kho-Kho and Ball-Badminton"
+    ],
+
+    "student_support": [
+        "Mentorship",
+        "Academic Support",
+        "Counselling",
+        "Welfare Hostel",
+        "NCC",
+        "NSS",
+        "Community Service"
+    ],
+
+    "facilities": [
+        "Library",
+        "Digital Learning Resources",
+        "Computer Facilities",
+        "Research Facilities",
+        "Sports Facilities",
+        "Welfare Hostel"
+    ],
+
+    "contact": {
+        "email": "info@gbcollege.ac.in",
+        "phone": "+91 91234 56789",
+        "address": "G.B. College, Naugachia, Bhagalpur, Bihar - 853204"
+    }
+}

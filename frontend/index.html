@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="GB College AI Assistant - Smart College Information Chatbot"
+    >
+
+    <title>GB College AI Assistant</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- ================= SIDEBAR ================= -->
+
+        <aside class="sidebar" id="sidebar">
+
+            <div class="sidebar-header">
+
+                <div class="brand">
+                    <div class="brand-logo college-logo">
+                        <img src="assets/gb-college-logo.jpg" alt="GB College Logo">
+                    </div>
+
+                    <div>
+                        <h2>GB College</h2>
+                        <span>AI Assistant</span>
+                    </div>
+                </div>
+
+                <button
+                    class="icon-btn close-sidebar"
+                    id="closeSidebar"
+                    aria-label="Close sidebar"
+                >
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+            </div>
+
+
+            <!-- New Chat -->
+
+            <button class="new-chat-btn" id="newChatBtn">
+                <i class="fa-solid fa-plus"></i>
+                <span>New Chat</span>
+            </button>
+
+
+            <!-- Navigation -->
+
+            <nav class="sidebar-nav">
+
+                <p class="nav-title">Explore</p>
+
+                <button class="nav-item active">
+                    <i class="fa-solid fa-comments"></i>
+                    <span>AI Assistant</span>
+                </button>
+
+                <button class="nav-item" id="coursesNav">
+                    <i class="fa-solid fa-book-open"></i>
+                    <span>Courses</span>
+                </button>
+
+                <button class="nav-item" id="admissionNav">
+                    <i class="fa-solid fa-file-signature"></i>
+                    <span>Admissions</span>
+                </button>
+
+                <button class="nav-item" id="libraryNav">
+                    <i class="fa-solid fa-book"></i>
+                    <span>Library</span>
+                </button>
+
+            </nav>
+
+
+            <!-- Sidebar Bottom -->
+
+            <div class="sidebar-bottom">
+
+                <div class="college-mini-card">
+
+                    <div class="mini-icon">
+                        <i class="fa-solid fa-building-columns"></i>
+                    </div>
+
+                    <div>
+                        <strong>G.B. College</strong>
+                        <span>Naugachia, Bihar</span>
+                    </div>
+
+                </div>
+
+                <p class="sidebar-note">
+                    Your smart college companion.
+                </p>
+
+            </div>
+
+        </aside>
+
+
+        <!-- ================= MAIN ================= -->
+
+        <main class="main">
+
+            <!-- Header -->
+
+            <header class="topbar">
+
+                <div class="topbar-left">
+
+                    <button
+                        class="icon-btn menu-btn"
+                        id="menuBtn"
+                        aria-label="Open menu"
+                    >
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                    <div class="page-title">
+
+                        <div class="status-dot"></div>
+
+                        <div>
+                            <h1>GB College AI Assistant</h1>
+                            <p>
+                                Your smart college companion
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="topbar-actions">
+
+                    <!-- Theme -->
+
+                    <button
+                        class="icon-btn"
+                        id="themeToggle"
+                        aria-label="Toggle theme"
+                    >
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+
+                    <!-- Clear -->
+
+                    <button
+                        class="icon-btn"
+                        id="clearChat"
+                        aria-label="Clear chat"
+                    >
+                        <i class="fa-solid fa-trash-can"></i>
+                    </button>
+
+                </div>
+                    <div class="voice-controls">
+
+                    <button
+                        id="voiceToggle"
+                        class="voice-control-btn"
+                        title="Voice On/Off">
+                        <i class="fa-solid fa-volume-high"></i>
+                    </button>
+
+                    <button
+                        id="stopVoice"
+                        class="voice-control-btn"
+                        title="Stop Speaking">
+                        <i class="fa-solid fa-stop"></i>
+                    </button>
+
+                </div>
+            </header>
+
+
+            <!-- ================= CHAT AREA ================= -->
+
+            <section class="chat-area" id="chatArea">
+
+                <!-- Welcome Screen -->
+
+                <div class="welcome-screen" id="welcomeScreen">
+
+                    <div class="welcome-icon college-welcome-logo">
+                        <img src="assets/bot.jpg" alt="GB College Logo">
+                    </div>
+
+                    <span class="welcome-badge">
+                        <i class="fa-solid fa-sparkles"></i>
+                        AI Powered
+                    </span>
+
+                    <h2>
+                        Hi 👋, I'm your
+                        <span>GB College AI Assistant</span>
+                    </h2>
+
+                    <p>
+                        Ask me about courses, admissions, departments,
+                        library and other college-related information.
+                    </p>
+
+
+                    <!-- Quick Questions -->
+
+                    <div class="quick-section">
+
+                        <h3>
+                            <i class="fa-solid fa-bolt"></i>
+                            Quick Questions
+                        </h3>
+
+                        <div class="quick-grid">
+
+                            <button
+                                class="quick-card"
+                                data-question="What courses are offered at G.B. College?"
+                            >
+                                <span class="quick-icon blue">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                </span>
+
+                                <span>
+                                    <strong>Courses</strong>
+                                    <small>Explore available courses</small>
+                                </span>
+
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+
+
+                            <button
+                                class="quick-card"
+                                data-question="Tell me about the admission process."
+                            >
+                                <span class="quick-icon purple">
+                                    <i class="fa-solid fa-file-signature"></i>
+                                </span>
+
+                                <span>
+                                    <strong>Admission</strong>
+                                    <small>Admission information</small>
+                                </span>
+
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+
+
+                            <button
+                                class="quick-card"
+                                data-question="Tell me about the college library."
+                            >
+                                <span class="quick-icon green">
+                                    <i class="fa-solid fa-book-open"></i>
+                                </span>
+
+                                <span>
+                                    <strong>Library</strong>
+                                    <small>Library & facilities</small>
+                                </span>
+
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+
+
+                            <button
+                                class="quick-card"
+                                data-question="Tell me about G.B. College."
+                            >
+                                <span class="quick-icon orange">
+                                    <i class="fa-solid fa-building-columns"></i>
+                                </span>
+
+                                <span>
+                                    <strong>About College</strong>
+                                    <small>Know about G.B. College</small>
+                                </span>
+
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Messages -->
+
+                <div
+                    class="messages"
+                    id="messages"
+                ></div>
+
+
+                <!-- Typing Indicator -->
+
+
+            <div
+                class="typing-wrapper"
+                id="typingIndicator"
+            >
+
+                <div class="message-avatar ai-avatar">
+                    <i class="fa-solid fa-robot"></i>
+                </div>
+
+                <div class="typing-bubble">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+            </div>
+
+
+            <!-- AI Speaking Indicator -->
+
+            <div
+                id="speakingIndicator"
+                class="speaking-indicator"
+            >
+
+                <div class="speaking-icon">
+                    <i class="fa-solid fa-volume-high"></i>
+                </div>
+
+                <div class="speaking-content">
+
+                    <span>AI is speaking...</span>
+
+                    <div class="voice-wave">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ================= INPUT ================= -->
+
+            <footer class="input-section">
+
+                <div class="input-container">
+
+                    <textarea
+                        id="messageInput"
+                        placeholder="Ask anything about G.B. College..."
+                    ></textarea>
+
+                    <button id="micBtn" class="mic-btn" title="Speak">
+                        <i class="fa-solid fa-microphone"></i>
+                    </button>
+
+                    <button id="sendBtn">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+
+                </div>
+
+                <p class="input-note">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    AI Assistant can make mistakes. Verify important information.
+                </p>
+
+            </footer>
+
+        </main>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
